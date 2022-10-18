@@ -5,3 +5,8 @@ org.springframework.test.context.cache.DefaultContextCache.get
 then we can check key-s mismatch (contextCustomizers, Mockito based...)
 
 then we can check org.springframework.test.context.MergedContextConfiguration.equals method to check what can make context miss
+
+
+*** profiles
+
+Add test profile properties, run 2 tests under new profile and one without, which leads to 2 test contexts required.
