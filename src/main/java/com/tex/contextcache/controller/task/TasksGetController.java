@@ -1,4 +1,4 @@
-package com.tex.contextcache.controller;
+package com.tex.contextcache.controller.task;
 
 import com.tex.contextcache.TaskPayload;
 import com.tex.contextcache.service.TasksService;

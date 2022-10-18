@@ -10,17 +10,11 @@ import javax.persistence.*;
 @Getter
 @Setter
 @EqualsAndHashCode
-public class Task {
+public class Todo {
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue
     Integer id;
-    @Enumerated
-    Status status;
-    String description;
-
-    public enum Status {
-        UNFINISHED,
-        FINISHED
-    }
+    String title;
+    String quote;
 }
