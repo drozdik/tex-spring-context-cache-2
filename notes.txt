@@ -1,0 +1,7 @@
+put breakpoint (conditional on this.contextMap.size() > 0) on incrementing miss count here
+
+org.springframework.test.context.cache.DefaultContextCache.get
+
+then we can check key-s mismatch (contextCustomizers, Mockito based...)
+
+then we can check org.springframework.test.context.MergedContextConfiguration.equals method to check what can make context miss
