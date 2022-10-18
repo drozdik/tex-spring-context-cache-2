@@ -1,6 +1,7 @@
 package com.tex.contextcache.controller.task;
 
 import com.tex.contextcache.Task;
+import com.tex.contextcache.controller.ControllerIntegrationTest;
 import com.tex.contextcache.service.TasksService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,11 +18,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class TaskCreateControllerTest {
+class TaskCreateControllerTest extends ControllerIntegrationTest {
     @Autowired
     MockMvc mockMvc;
-    @MockBean
-    TasksService tasksService;
 
     @Test
     void create() throws Exception {
