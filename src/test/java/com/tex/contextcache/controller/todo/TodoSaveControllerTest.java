@@ -16,7 +16,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@TestPropertySource
+@TestPropertySource(properties = {"todo.quote=zoobar"})
 class TodoSaveControllerTest extends ControllerIntegrationTest {
     @Autowired
     MockMvc mockMvc;
@@ -53,7 +53,7 @@ class TodoSaveControllerTest extends ControllerIntegrationTest {
 
         Todo forSave = new Todo();
         forSave.setTitle("some title");
-        forSave.setQuote("foobar");
+        forSave.setQuote("zoobar");
         when(todoService.saveTodo(forSave)).thenReturn(new Todo());
 
         mockMvc.perform(
