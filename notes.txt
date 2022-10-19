@@ -15,3 +15,24 @@ Add test profile properties, run 2 tests under new profile and one without, whic
 *** Import and @TestConfig
 
 put breakpoint  handleEvent(BeforeTestMethodEvent event) to show 'private' fields that can be useful
+
+
+** Materials
+
+https://www.youtube.com/watch?v=uc-cfX-5wQA&t=2908s Heisenbug talk
+https://www.baeldung.com/spring-tests Baeldung optimizing integration tests
+https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testcontext-ctx-management-caching Spring doc on context caching
+
+
+** Uncovered, open topic
+
+find or build reporting on increased number of contexts created after each run - part of test report,
+for that maybe can use reflection, own extended implementation, events
+
+@ContextHierarchy and @DirtiesContext uncovered
+
+there are other attributes which cause cache misses - check documentation
+
+research why single context initialization can be slow
+
+when 'sliced' context is 'profitable'
