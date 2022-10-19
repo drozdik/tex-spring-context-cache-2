@@ -16,7 +16,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@TestPropertySource(properties = {"todo.quote=zoobar"})
 class TodoSaveControllerTest extends ControllerIntegrationTest {
     @Autowired
     MockMvc mockMvc;
