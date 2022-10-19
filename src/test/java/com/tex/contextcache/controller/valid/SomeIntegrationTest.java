@@ -19,12 +19,6 @@ public class SomeIntegrationTest extends ControllerIntegrationTest {
     @Autowired
     MockMvc mockMvc;
 
-    @TestConfiguration
-    @Import(MyEventsListener.class)
-    static class TestControllerConfig{
-
-    }
-
     @Test
     void name() {
         assertThat(true).isTrue();
