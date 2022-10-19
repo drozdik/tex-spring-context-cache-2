@@ -10,3 +10,8 @@ then we can check org.springframework.test.context.MergedContextConfiguration.eq
 *** profiles
 
 Add test profile properties, run 2 tests under new profile and one without, which leads to 2 test contexts required.
+
+
+*** Import and @TestConfig
+
+put breakpoint  handleEvent(BeforeTestMethodEvent event) to show 'private' fields that can be useful
